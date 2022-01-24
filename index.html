@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>TUGAS 14</title>
+    
+</head>
+<body bgcolor="gold">
+    <img src="games.png" width="100%">
+
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="opengames('Dota2')">Dota 2</button>
+        <button class="w3-bar-item w3-button" onclick="opengames('Valorant')">Valorant</button>
+        <button class="w3-bar-item w3-button" onclick="opengames('Battlefield')">Battlefield 2042</button>
+        <button class="w3-bar-item w3-button" onclick="opengames('ApexLegend')">Apex Legend</button>
+        <button class="w3-bar-item w3-button" onclick="opengames('FallGuys')">Fall Guys</button>
+        <button class="w3-bar-item w3-button" onclick="opengames('Profile')">Profile</button>
+    </div>
+
+    <div id="Home" class="w3-container games" style="display: contents;" >
+        <img src="Welcome.jpg" width="100%">
+    </div>
+
+    <div id="Dota2" class="w3-container games w3-animate-fading" style="display:none" >
+        <br>
+        <center>
+            <img src="dota.jpg" width="250px">
+        </center>
+        <br>
+        <strong>DOTA 2</strong>
+        <p> adalah sebuah permainan arena pertarungan daring multipemain,
+            dan merupakan sekuel dari Defense of the Ancients mod pada Warcraft 3: 
+            Reign of Chaos dan Warcraft 3: The Frozen Throne. DotA 2 dikembangkan oleh Valve Corporation, 
+            terbit juli 2013 dota 2 dapat dimainkan secara gratis pada sistem operasi Microsoft Windows, OS X and Linux. 
+            Dota 2 dapat dimainkan secara eksklusif melalui distributor resmi valve, Steam.
+        </p>
+    </div>
+    
+    <div id="Valorant" class="w3-container games w3-animate-zoom" style="display:none">
+        <br>
+        <center>
+            <img src="valorant.png" width="250px">
+        </center>
+        <br>
+        <strong>VALORANT</strong>
+        <p>(bergaya sebagai VALORANT) adalah penembak pahlawan orang pertama taktis multipemain gratis untuk dimainkan
+            yang dikembangkan dan diterbitkan oleh Riot Games, untuk Microsoft Windows.Pertama kali menggoda dengan nama kode Project A pada Oktober 2019,
+            permaian memulai periode beta tertutup dengan akses terbatas pada 7 April 2020, diikuti dengan perilisan resmi pada 2 Juni 2020. Pengembangan permainan dimulai pada 2014.
+        </p>
+    </div>
+
+    <div id="Battlefield" class="w3-container games w3-animate-left" style="display:none">
+        <br>
+        <center>
+            <img src="battelfield.jpg" width="250px">
+        </center>
+        <br>
+        <strong>BATTELFIELD</strong>
+        <p>adalah video game bergenre first-person shooter yang akan muncul,
+            serta dikembangkan oleh DICE dan diterbitkan oleh Electronic Arts.
+            Ini merupakan bagian ketujuh belas dalam seri Battlefield.
+        </p>
+    </div>
+
+    <div id="ApexLegend" class="w3-container games w3-animate-right" style="display:none">
+        <br>
+        <center>
+            <img src="apex.jpg" width="250px">
+        </center>
+        <br>
+        <strong>APEX LEGEND</strong>
+        <p>adalah permainan battle royale free-to-play yang dikembangkan oleh Respawn Entertainment
+            dan diterbitkan oleh Electronic Arts. Permainan ini berada di alam semesta yang sama dengan Titanfall.
+            Permainan ini dirilis untuk Microsoft Windows, PlayStation 4, dan Xbox One pada 4 Februari 2019. 
+            Satu minggu setelah dirilis, permainan ini telah diunduh lebih dari 25 juta kali 
+            dan lebih dari 2 juta pemain daring secara bersamaan.
+        </p>
+    </div>
+
+    <div id="FallGuys" class="w3-container games w3-animate-bottom" style="display:none">
+        <br>
+        <center>
+            <img src="fallguys.jpg" width="250px">
+        </center>
+        <br>
+        <strong>FALL GUYS</strong>
+        <p>Fall Guys: Ultimate Knockout adalah gim video battle royale platform yang dikembangkan 
+            oleh Mediatonic dan diterbitkan oleh Devolver Digital. Ini dirilis untuk Microsoft Windows dan 
+            PlayStation 4 pada 4 Agustus 2020. Gim ini akan hadir di Nintendo Switch, Xbox One dan Xbox Series X/S 
+            pada pertengahan 2021. Gim ini mengambil inspirasi dari acara gim seperti Takeshi's Castle, It's a Knockout and Wipeout, 
+            dan permainan bermain seperti tag dan British Bulldog.
+        </p>
+    </div>
+
+    <div id="Profile" class="w3-container games w3-animate-top" style="display:none">
+        <br>
+        <center>
+            <img src="irhammm.jpeg" width="200px">
+        </center>
+        <br>
+        <center>
+            <p>NIM : 10121107</p>
+            <p>Nama : Irham Ahmad Musyadad</p>
+            <p>Kelas : Informatika 3</p>
+        </center>
+
+    </div>
+
+    <!-- JS -->
+
+    <script>
+        function opengames(namagames) {
+        var i;
+        var x = document.getElementsByClassName("games");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+        }
+        document.getElementById(namagames).style.display = "block"; 
+        }
+    </script>
+
+</body>
+</html>
